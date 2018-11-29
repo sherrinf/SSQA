@@ -1,4 +1,4 @@
 # SSQA
 
 Dedicated repository for SS QA Assessment.
-UI branch for all flies related to UI test.
+UI branch for all files related to UI test.
