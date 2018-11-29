@@ -1,0 +1,19 @@
+ID,Location,Sublocation,Title,Description,Repro steps
+Bug #001,Create an account page,Sign up form,[Text] Typo in required field error message.,"It should be ""First name"", ""Last name"", ""Password"", ""Address"", ""City"", in 
+There are 8 errors
+1. You must register at least one phone number.
+2. lastname is required.
+3. firstname is required.
+4. passwd is required.
+5. address1 is required.
+6. city is required.","1. Click on Sign in button.
+2. Enter valid email address under Create an account field.
+3. Leave all required field empty.
+4. Press Enter key/ click on Register button."
+Bug #002,Create an account page,Sign up form,[TS01_06] Optional field marked with *,* should not exist in Assign an address alias for future reference. *,"1. Click on Sign in button.
+2. Enter valid email address under Create an account field.
+3. Scroll the page to end of form."
+Bug #003,Search,Search result page,[TS03_03] Search result is empty.,It should displayed every product contains with character enter in Search field.,"1. Enter one character, ex: d
+2. Click Sign in button/press Enter key."
+Bug #004,Search,Search result page,[TS03_04] Wrong product displayed in Search result.,It should displayed only dress product.,"1. Enter ""dress"" on Search field.
+2. Click Sign in button/press Enter key."
