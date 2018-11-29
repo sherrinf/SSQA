@@ -1,0 +1,13 @@
+ID,Test Scenario,Number of Test case
+TS_UI_01,Sign up functionality.,11
+TS_UI_02,Sign in functionality.,5
+TS_UI_03,Search functionality.,6
+TS_UI_04,Hyperlink at homepage.,5
+TS_UI_05,Slideshow functionality.,3
+TS_UI_06,Shopping cart functionality.,7
+TS_UI_07,Filtering functionality.,
+TS_UI_08,Sorting functionality.,
+TS_UI_09,Product category.,
+TS_UI_10,Product details page.,
+TS_UI_11,Search result page.,
+TS_UI_12,Checkout page.,

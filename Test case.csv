@@ -1,0 +1,79 @@
+Scenario ID,Test case ID,Test case,Description,Step,Expected result,Actual Result,Test browser,Status,Comment/Bug ID
+TS_UI_01,TS01_01,Radio buttons are working.,Radio buttons must working as intended.,"1. Click on available radio button. 
+2. Click on another radio button. 
+",User can only choose 1 option on the same category.,"Button can be clicked, only one value can be selected.",Chrome,Pass,
+,TS01_02,Dropdown buttons are working.,Dropdown buttons must working as intended.,"1. Click on available dropdown button.
+2. Choose one value from the list. ","1. Corresponding list items are displayed. 
+2. Chosen value will be selected.","Button can be clicked, list items displayed, chosen value selected.",Chrome,Pass,
+,TS01_03,Checkbox buttons are working.,Checkbox buttons must working as intended.,"1. Click on one of available checkboxes.
+2. Click on another available checkboxes.
+3. Click on previous checkbox.",User can select more than 1 option. Each buttons operates individually.,"Button can be selected and unselected, multiple option can be chosen.",Chrome,Pass,
+,TS01_04,Submit/register button is working.,Submit/register button must working as intended.,"1. Leave form blank.
+2. Click on register button.
+3. Fill in form with invalid data.
+4. Click on register button.
+5. Fill in form with valid data.
+6. Click on register button.","After click on register button, web will process the data and give corresponding output.",Data processing after submit/register button clicked.,Chrome,Pass,
+,TS01_05,Enter key can be use as a substitute of submit/register button.,Enter key working as a substitute of submit/register button.,"1. Leave form blank.
+2. Press enter key.
+3. Fill in form with invalid data.
+4. Press enter key.
+5. Fill in form with valid data.
+6. Press enter key.","After press enter key, web will process the data and give corresponding output.",Data processing after Enter key button clicked.,Chrome,Pass,
+,TS01_06,All required fields are marked with *,Required field must be marked on.,Visually check all required field.,Only required field marked with *,Optional field marked with *,Chrome,Fail,Bug #002
+,TS01_07,Leave all required field empty.,User can only successfully register after enter all required fields data.,"1. Leave all required field empty.
+2. Click Register button/press Enter key.","Register unsuccessful, error message appear.","User can't register, error message with empty required field appear.",Chrome,Pass,
+,TS01_08,Leave some required field empty.,User can only successfully register after enter all required fields data.,"1. Leave some required field empty.
+2. Click Register button/press Enter key.","Register unsuccessful, error message appear.","User can't register, error message with empty required field appear.",Chrome,Pass,
+,TS01_09,Fill all required field.,User can only successfully register after enter all required fields data.,"1. Fill in all required field.
+2. Click Register button/press Enter key.",Register successful.,,,,
+,TS01_10,Leave all optional field empty.,User can successfully even if optional fields are empty.,"1. Leave all optional field empty.
+2. Click Register button/press Enter key.",Register successful.,,,,
+,TS01_11,Leave some optional field empty.,User can successfully even if optional fields are empty.,"1. Leave some optional field empty.
+2. Click Register button/press Enter key.",Register successful.,,,,
+TS_UI_02,TS02_01,Leave all field empty and click on Sign in button/press Enter key.,User can only sign in after enter registered email and password.,"1. Leave all field empty.
+2. Click Sign in button/press Enter key.","User can't sign in, error message appear.",,,,
+,TS02_02,Enter key can be use as a substitute of Sign in button.,Enter key working as a substitute of Sign in button.,"1. Leave form blank.
+2. Press enter key.
+3. Fill in form with invalid data.
+4. Press enter key.
+5. Fill in form with valid data.
+6. Press enter key.","User can't sign in, error message appear.",,,,
+,TS02_03,Enter invalid email address.,User can only sign in after enter registered email and password.,"1. Enter invalid email address.
+2. Enter valid password.
+3. Click Sign in button/press Enter key.","User can't sign in, error message appear.",,,,
+,TS02_04,Enter invalid password.,User can only sign in after enter registered email and password.,"1. Enter valid email address.
+2. Enter invalid password.
+3. Click Sign in button/press Enter key.","User can't sign in, error message appear.",,,,
+,TS02_05,Enter valid email address and password.,User can only sign in after enter registered email and password.,"1. Enter valid email address.
+2. Enter valid password.
+3. Click Sign in button/press Enter key.","Sign in successfully, user redirected to My account page.",,,,
+TS_UI_03,TS03_01,Leave the search field empty then click on Search button.,Search button is working with or without entering valid product.,"1. Leave search field empty.
+2. Click Search button.","User redirected to Search result page, no product will be shown, correponding message will appear.","User redirected to Search page, with no product shown. Message ""0 results have been found."" and ""Please enter a search keyword"" appear.",Chrome,Pass,
+,TS03_02,Click in search field and press Enter key.,Enter key working as a substitute of Search button.,"1. Click in search field.
+2. Press Enter key.","User redirected to Search result page, no product will be shown, correponding message will appear.","User redirected to Search page, with no product shown. Message ""0 results have been found."" and ""Please enter a search keyword"" appear.",Chrome,Pass,
+,TS03_03,Enter one character and click on Search button/press Enter key.,"Search function will search enter data, and displayed correponding product.","1. Click in Search field.
+2. Enter one character.
+3. Click on Search button/press Enter key.",Product name contains the character will displayed.,"Search only displayed the product, if 3 or more character entered.",Chrome,Fail,Bug #003
+,TS03_04,Enter available product and click on Search button/press Enter key.,"Search function will search enter data, and displayed correponding product.","1. Click in Search field.
+2. Enter valid product name.
+3. Click on Search button/press Enter key.",Corresponding product will displayed.,Search result displayed all product.,Chrome,Fail,Bug #004
+,TS03_05,Enter unavailable product and click on Search button/press Enter key.,"Search function will search enter data, and displayed correponding product.","1. Click in Search field.
+2. Enter invalid product name.
+3. Click on Search button/press Enter key.","User redirected to Search result page, no product will be shown, correponding message will appear.","User redirected to Search page, with no product shown. Message ""0 results have been found."" and ""No results were found for your search"" appear.",Chrome,Pass,
+,TS03_06,Auto suggestion.,,,,,,,
+TS_UI_04,TS04_01,Hand icon is displayed when mouse pointer is hovered over the link.,,,,,,,
+,TS04_02,Email address link opening the mail instance.,,,,,,,
+,TS04_03,Links are redirecting to correct product/category pages.,,,,,,,
+,TS04_04,None of the links are broken.,,,,,,,
+,TS04_05,All external links are opening in new window with proper URL.,,,,,,,
+TS_UI_05,TS05_01,The order of slider images are consistent.,,,,,,,
+,TS05_02,Slider navigation arrows.,,,,,,,
+,TS05_03,The slides can be click and redirecting to correct product/category pages.,,,,,,,
+TS_UI_06,TS06_01,Click on empty Cart.,,,,,,,
+,TS06_02,Add product to Cart.,,,,,,,
+,TS06_03,"Cart updated with correct product details, after add or remove product.",,,,,,,
+,TS06_04,Add same product multiple times.,,,,,,,
+,TS06_05,Price and total updated accordingly.,,,,,,,
+,TS06_06,Add multiple product with different types.,,,,,,,
+,TS06_07,Remove product.,,,,,,,
